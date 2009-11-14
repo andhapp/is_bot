@@ -1,8 +1,8 @@
 module IsBot
   module CaptchaInReverse
     def self.included(base)
-      base.extend ClassMethods
       base.class_eval do
+        extend ClassMethods
         class_inheritable_accessor :captcha_in_reverse
       end  
     end
