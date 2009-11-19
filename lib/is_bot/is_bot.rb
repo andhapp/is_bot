@@ -17,4 +17,13 @@ module IsBot
       end
     end
   end
+  
+  module ViewHelper
+    def captcha_reverse_field(object, options={})
+      style = (options.delete(:style) || '') << ";"
+      style << "display: none;"
+      ActionView::Helpers::InstanceTag.new(object, :captcha_in_reverse, self).to_input_field_tag("text", options.merge(:style => style) )
+    end
+  end
+
 end
