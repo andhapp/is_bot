@@ -1,0 +1,8 @@
+23 January 2011
+---------------
+
+* Moved to Ruby 1.9.2
+* Upgraded to Rails3
+* Upgraded to Bundler
+* Cleaned up code
+* Slightly improved the specs
