@@ -1,2 +1,3 @@
-is_bot.database
-is_bot.db
+vendor/
+.bundle/
+.rvmrc
