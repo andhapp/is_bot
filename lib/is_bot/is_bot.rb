@@ -3,7 +3,7 @@ module IsBot
     def self.included(base)
       base.class_eval do
         extend ClassMethods
-        class_inheritable_accessor :captcha_in_reverse
+        class_attribute :captcha_in_reverse
       end
     end
 

@@ -1,7 +1,8 @@
+require 'bundler'
+Bundler.require(:default)
+
 require 'active_record'
 require 'action_view'
-require 'yaml'
-require 'rspec'
 
 require File.expand_path("../../init", __FILE__)
 require File.expand_path("../models", __FILE__)
