@@ -21,8 +21,8 @@ In your model class:
     
 In your model's view:
     
-    form_for @user do |F|
-      f.captcha_reverse_field :user
+    form_for @user do |f|
+      captcha_reverse_field :user
     end
     
 And that's it.

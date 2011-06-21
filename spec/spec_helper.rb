@@ -4,7 +4,7 @@ Bundler.require(:default)
 require 'active_record'
 require 'action_view'
 
-require File.expand_path("../../init", __FILE__)
+require File.expand_path("../../lib/is_bot", __FILE__)
 require File.expand_path("../models", __FILE__)
 
 def connect(environment)

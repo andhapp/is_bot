@@ -1,10 +1,9 @@
 module IsBot
   module CaptchaInReverse
-    def self.included(base)
-      base.class_eval do
-        extend ClassMethods
-        class_attribute :captcha_in_reverse
-      end
+    extend ActiveSupport::Concern
+
+    included do 
+      class_attribute :captcha_in_reverse
     end
 
     module ClassMethods

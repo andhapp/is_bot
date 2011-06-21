@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Anuj Dutta"]
-  s.date = %q{2011-06-19}
+  s.date = %q{2011-06-21}
   s.description = %q{Simple gem to reduce the spam attacks on sign-up, sign-in and other similar sorts of forms.}
   s.email = %q{anuj@andhapp.com}
   s.extra_rdoc_files = [
@@ -25,12 +25,12 @@ Gem::Specification.new do |s|
     "README.markdown",
     "Rakefile",
     "VERSION",
-    "init.rb",
     "is_bot.gemspec",
     "lib/is_bot.rb",
     "lib/is_bot/is_bot.rb",
     "pkg/is_bot-0.1.0.gem",
     "pkg/is_bot-0.2.0.gem",
+    "pkg/is_bot-0.3.0.gem",
     "spec/database.yml",
     "spec/is_bot_spec.rb",
     "spec/models.rb",
