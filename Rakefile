@@ -7,6 +7,7 @@ begin
     gemspec.email = "anuj@andhapp.com"
     gemspec.homepage = "http://github.com/andhapp/is_bot"
     gemspec.authors = ["Anuj Dutta"]
+    gemspec.files = FileList['lib/**/*.rb'].to_a
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
