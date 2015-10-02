@@ -1,16 +1,14 @@
-is_bot
-======
+# is_bot
 
-About
------
+## About
 
 **is_bot** is a clean rewrite of **less_reverse_captcha**
 
 It is a simple way to make your forms bot-proof. The effectiveness of the solution is open to discussion. I have used it on a low traffic site and it seems to have reduced the bot-attack considerably.
 
 
-Usage
------
+## Usage
+
 It is very simple to use. Just install it in your rails app and perform the following steps. 
 
 In your model class:
@@ -27,14 +25,24 @@ In your model's view:
     
 And that's it.
 
+## Rails 3
 
-Bugs
-----
+Use version 1.0.0
 
-Please report the issues through gitHub's issues.
+## Rails 4
+
+Use version 2.0.0
+
+## Versioning
+
+The project uses semantic versioning.
+
+## Bugs
+
+Please report the issues through [Github's issues](https://github.com/andhapp/is_bot/issues).
 
 
-Authors
--------
+## Authors
 
 * Anuj Dutta - [andHapp.com](http://www.andhapp.com/blog)
+

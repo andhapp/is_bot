@@ -1,9 +1,4 @@
-# A sample Gemfile
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
-gem "rails",    "3.1.1"
-gem "rspec"
-
-group :test do
-  gem "sqlite3"
-end
+# Specify your gem's dependencies in is_bot.gemspec
+gemspec
