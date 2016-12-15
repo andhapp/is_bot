@@ -44,7 +44,7 @@ describe IsBot do
 
       context "Custom validation" do
         it "should accept a custom error message" do
-          robot = Robot.new(:captcha_in_reverse => "I am a Bot!")
+          robot = Robot.new(captcha_in_reverse: "I am a Bot!")
           robot.valid?
           robot.errors[:captcha_in_reverse] == "You are a BOT. Go away"
         end
@@ -65,14 +65,14 @@ describe IsBot do
         expect(ViewHelper::ViewField.new).to respond_to(:captcha_reverse_field)
       end
 
-      it "should be hidden" do
+      it "should be hidden from user view and visible to screen readers" do
         captcha_field = ViewHelper::ViewField.new.captcha_reverse_field(:bot)
-        expect(captcha_field).to include("style=\";visibility: hidden;\"")
+        expect(captcha_field).to include("style=\";position:absolute;left:-999em;\"")
       end
 
       it "should include the custom defined styles" do
-        captcha_field = ViewHelper::ViewField.new.captcha_reverse_field(:bot, {:style => "color:red"})
-        expect(captcha_field).to include("style=\"color:red;visibility: hidden;\"")
+        captcha_field = ViewHelper::ViewField.new.captcha_reverse_field(:bot, {style: "color:red"})
+        expect(captcha_field).to include("style=\"color:red;position:absolute;left:-999em;\"")
       end
     end
   end
