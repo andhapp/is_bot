@@ -31,7 +31,12 @@ Use version 1.0.0
 
 ## Rails 4
 
-Use version 2.0.0
+Use version 2.0.0 and above.
+
+## [Wiki](https://github.com/andhapp/is_bot/wiki)
+
+There are a couple of pages describing inner workings and pecuilar use cases. Will update it as and when I come
+across more pecuilar ones.
 
 ## Versioning
 
